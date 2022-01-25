@@ -5,5 +5,5 @@
   gather_facts: no
   tasks:
     - name: list /root folder
-      command: ls -l /root
+      command: "ls -l /root"
 ...
