@@ -1,7 +1,7 @@
 ---
 - name: Play-with-Tower
   # note: your 'hosts' section will likely be different as this is a group I created for my Red Hat hosts in Ansible Tower itself.
-  hosts: all
+  hosts: api.homely.cp.fyre.ibm.com
   gather_facts: no
   tasks:
     - name: list /root folder
