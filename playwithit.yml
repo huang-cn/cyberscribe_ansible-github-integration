@@ -4,6 +4,6 @@
   hosts: qb_host
   gather_facts: no
   tasks:
-    - name: list /root folder
-      command: "ls -l /root"
+    - name: yum update
+      command: "yum update -y"
 ...
