@@ -1,0 +1,14 @@
+---
+- name: clear env
+  hosts: qb_host
+  gather_facts: false
+  tasks:
+  - name: stop mysql
+    command: "systemctl stop mysqld"
+  - name: uninstall mysql
+    command: "yum -y erase mysql"
+  - name: stop apache
+    command: "systemctl stop httpd"
+  - name: uninstall apache
+    command: "yum -y erase httpd"
+...
