@@ -2,6 +2,6 @@
   hosts: qb_host
   become: true
   roles:
-    - nginxinc.nginx
+    - nginxinc.nginx_core.nginx
     
     
