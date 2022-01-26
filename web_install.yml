@@ -4,12 +4,10 @@
   gather_facts: false
   tasks:
   - name: Update
-    dnf:
-      update_only: yes
-      update_cache: yes
+    command: "yum -y update"
 
 - name: Install Apache on web and start service
-  hosts: web
+  hosts: all
   gather_facts: false
   tasks: 
     - name: Install Apache
@@ -31,7 +29,7 @@
         - https
 
 - name: Install MySQL and start service
-  hosts: db
+  hosts: all
   gather_facts: false
   tasks: 
     - name: Install MySQL
