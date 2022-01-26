@@ -33,9 +33,9 @@
   gather_facts: false
   tasks: 
     - name: Install MySQL
-    yum: 
-      name: mysql-server
-      state: latest
+      yum: 
+        name: mysql-server
+        state: latest
     - name: Start MySQL service
       systemd: 
         name: mysqld
