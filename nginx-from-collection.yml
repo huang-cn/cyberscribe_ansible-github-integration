@@ -2,7 +2,6 @@
   hosts: qb_host
   become: true
   roles:
-    - nginxinc.nginx_core.ansible-role-nginx
-    #- nginxinc.nginx_core.nginx
+    - nginxinc.nginx_core.nginx
     
     
