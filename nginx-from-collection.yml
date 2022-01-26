@@ -2,6 +2,6 @@
   hosts: ubuntu
   become: true
   roles:
-    - nginx
+    - debops.debops.nginx
     
     
