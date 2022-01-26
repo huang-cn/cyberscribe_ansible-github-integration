@@ -20,15 +20,15 @@
       systemd: 
         name: httpd
         state: started
-    - name: Open TCP 8081 and 443
-      firewalld:
-        service: "{{ item }}"
-        permanent: yes
-        state: enabled
-        immediate: yes
-      loop: 
-        - 8081
-        - https
+#    - name: Open TCP 8081 and 443
+#      firewalld:
+#        service: "{{ item }}"
+#        permanent: yes
+#        state: enabled
+#        immediate: yes
+#      loop: 
+#        - 8081
+#        - https
 
 - name: Install MySQL and start service
   hosts: all
