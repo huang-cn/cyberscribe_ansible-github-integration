@@ -1,5 +1,5 @@
 - name: Install Nginx from galaxy collection
-  hosts: qb_host
+  hosts: ubuntu
   become: true
   roles:
     - nginx
