@@ -1,8 +1,8 @@
 [qb_host]
 api.homely.cp.fyre.ibm.com
 
-[ubuntu]
-roadster1.fyre.ibm.com
+[qb_rhel]
+recouple1.fyre.ibm.com
 
 [all]
 api.homely.cp.fyre.ibm.com
