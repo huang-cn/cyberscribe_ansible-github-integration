@@ -14,18 +14,20 @@
       yum:
         name: httpd
         state: latest
+    - name: update port
+      command: "sed -i 's/Listen 80/Listen 8081/g' /etc/httpd/conf/httpd.conf"
     - name: Start Apache service
       systemd: 
         name: httpd
         state: started
-    - name: Open TCP 80 and 443
+    - name: Open TCP 8081 and 443
       firewalld:
         service: "{{ item }}"
         permanent: yes
         state: enabled
         immediate: yes
       loop: 
-        - http
+        - 8081
         - https
 
 - name: Install MySQL and start service
