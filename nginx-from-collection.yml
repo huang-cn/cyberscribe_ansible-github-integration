@@ -1,5 +1,7 @@
 - name: Install Nginx from galaxy collection
   hosts: qb_host
-  collections:
-    - nginxinc.nginx_core
+  become: true
+  roles:
+    - nginx
+    
     
